@@ -1,0 +1,30 @@
+[project]
+name = "imdb-to-sqlite"
+version = "0.1"
+description = "IMDB non-commercial data as sqlite database"
+readme = "README.md"
+authors = [{name = "Keshab Paudel"}]
+license = {text = "Apache-2.0"}
+requires-python = ">=3.8"
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "click"
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://github.com/poudel/imdb-to-sqlite"
+Changelog = "https://github.com/poudel/imdb-to-sqlite/releases"
+Issues = "https://github.com/poudel/imdb-to-sqlite/issues"
+CI = "https://github.com/poudel/imdb-to-sqlite/actions"
+
+[project.scripts]
+imdb-to-sqlite = "imdb_to_sqlite.cli:cli"
+
+[project.optional-dependencies]
+test = ["pytest"]
